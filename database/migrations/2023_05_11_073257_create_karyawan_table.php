@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('nama_lengkap');
             $table->string('jabatan');
             $table->string('email');
-            $table->bigInteger('nomor_telepon');
-            $table->decimal('gaji');
+            $table->string('nomor_telepon');
+            $table->string('gaji');
             $table->timestamps();
         });
     }
