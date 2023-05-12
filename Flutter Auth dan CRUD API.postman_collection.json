@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "ba00724a-650a-4da7-83be-1b2883b15af3",
+		"name": "Flutter Auth dan CRUD API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24153349"
+	},
+	"item": [
+		{
+			"name": "[GET] Display All Data Karyawan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/karyawan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"karyawan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] Display Specify Data Karyawan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/karyawan/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"karyawan",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] Store Data Karyawan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama_lengkap\": \"Data Postman\",\n    \"jabatan\": \"CEO Postman\",\n    \"email\": \"postman@gmail.com\",\n    \"nomor_telepon\": \"021-2542-1201\",\n    \"gaji\": \"45.000.000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/karyawan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"karyawan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] Update Data Karyawan",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama_lengkap\": \"Data Postman Updated\",\n    \"jabatan\": \"CEO Postman\",\n    \"email\": \"postman@gmail.com\",\n    \"nomor_telepon\": \"021-2542-1201\",\n    \"gaji\": \"45.000.000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/karyawan/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"karyawan",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[DELETE] Destroy Data Karyawan",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/karyawan/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"karyawan",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
