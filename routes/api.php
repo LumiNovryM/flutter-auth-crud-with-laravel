@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('karyawan', KaryawanController::class)->middleware('auth:api');
+Route::apiResource('karyawan', KaryawanController::class);
